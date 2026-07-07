@@ -118,9 +118,6 @@ function updateCountdown() {
     const nextValue = String(value).padStart(2, "0");
     if (node.textContent !== nextValue) {
       node.textContent = nextValue;
-      node.classList.remove("count-bump");
-      void node.offsetWidth;
-      node.classList.add("count-bump");
     }
   });
 }
@@ -198,19 +195,6 @@ function toggleMusic() {
   }
 }
 
-function setupReveal() {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("is-visible");
-      });
-    },
-    { threshold: 0.18 }
-  );
-
-  document.querySelectorAll(".reveal").forEach((node) => observer.observe(node));
-}
-
 envelopeButton.addEventListener("click", () => {
   introScreen.classList.add("is-open");
   siteShell.classList.add("is-visible");
@@ -227,5 +211,4 @@ musicToggle.addEventListener("click", toggleMusic);
 
 renderLanguage();
 updateCountdown();
-setupReveal();
 window.setInterval(updateCountdown, 1000);
