@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="دعوة خطوبة هشام وروان في قاعة الماسة" />
+    <meta property="og:title" content="Hesham & Rawan Engagement Invitation" />
+    <meta property="og:description" content="You are invited to celebrate Hesham & Rawan" />
+    <title>Hesham & Rawan Engagement Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-lights" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <button class="language-toggle" type="button" aria-label="Switch language">
+      EN
+    </button>
+
+    <button class="music-toggle" type="button" aria-label="Toggle music">
+      <i class="fa-solid fa-music" aria-hidden="true"></i>
+    </button>
+
+    <section class="intro-screen" aria-label="Open invitation">
+      <div class="sparkle-field" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="intro-frame"></div>
+      <button class="envelope-button animate__animated animate__fadeInUp" type="button">
+        <span class="envelope">
+          <span class="envelope-back"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-front"></span>
+          <span class="seal" data-bind="initials"></span>
+        </span>
+        <span class="intro-text" data-i18n="openInvitation"></span>
+      </button>
+    </section>
+
+    <main class="site-shell" aria-hidden="true">
+      <section class="hero section">
+        <div class="sparkle-field hero-sparkles" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="hero-glass animate__animated animate__fadeIn"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <p class="kicker animate__animated animate__fadeInDown" data-bind="formattedDate"></p>
+        <h1 class="animate__animated animate__fadeInUp" data-bind="coupleNames"></h1>
+        <div class="rings" aria-hidden="true">
+          <i class="fa-solid fa-ring"></i>
+          <i class="fa-solid fa-ring"></i>
+        </div>
+        <p class="small-kicker animate__animated animate__fadeInUp animate__delay-1s" data-i18n="heroKicker"></p>
+        <p class="hero-copy animate__animated animate__fadeInUp animate__delay-1s" data-i18n="invitationLine"></p>
+        <a class="scroll-link animate__animated animate__pulse animate__infinite animate__slower" href="#countdown">
+          <span data-i18n="scrollExplore"></span>
+          <i class="fa-solid fa-arrow-down-long" aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <div class="divider" aria-hidden="true">
+        <span></span>
+        <b></b>
+        <span></span>
+      </div>
+
+      <section class="section countdown-section" id="countdown">
+        <div class="section-title">
+          <h2 data-i18n="countdownTitle"></h2>
+          <p data-i18n="countdownSubtitle"></p>
+        </div>
+        <div class="countdown-grid">
+          <article class="time-card reveal animate__animated">
+            <strong data-countdown="days">00</strong>
+            <span data-i18n="days"></span>
+          </article>
+          <article class="time-card reveal animate__animated">
+            <strong data-countdown="hours">00</strong>
+            <span data-i18n="hours"></span>
+          </article>
+          <article class="time-card reveal animate__animated">
+            <strong data-countdown="minutes">00</strong>
+            <span data-i18n="minutes"></span>
+          </article>
+          <article class="time-card reveal animate__animated">
+            <strong data-countdown="seconds">00</strong>
+            <span data-i18n="seconds"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section invitation-wrap">
+        <article class="invitation-card reveal animate__animated">
+          <div class="card-seal" data-bind="initials"></div>
+          <p class="kicker" data-bind="eventType"></p>
+          <h2 data-i18n="invitationTitle"></h2>
+          <p data-i18n="invitationBody"></p>
+          <h3 data-bind="coupleNames"></h3>
+          <div class="card-line"></div>
+          <ul>
+            <li><i class="fa-regular fa-calendar-days" aria-hidden="true"></i><span data-bind="formattedDate"></span></li>
+            <li><i class="fa-regular fa-clock" aria-hidden="true"></i><span data-bind="eventTime"></span></li>
+            <li><i class="fa-solid fa-gem" aria-hidden="true"></i><span data-bind="venueName"></span></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span data-bind="address"></span></li>
+          </ul>
+          <p class="closing" data-i18n="finalSentence"></p>
+        </article>
+      </section>
+
+      <section class="section details-section">
+        <div class="section-title">
+          <h2 data-i18n="eventDetails"></h2>
+        </div>
+        <div class="details-grid">
+          <article class="detail-card reveal animate__animated">
+            <span class="icon"><i class="fa-regular fa-calendar-days" aria-hidden="true"></i></span>
+            <small data-i18n="date"></small>
+            <strong data-bind="formattedDate"></strong>
+          </article>
+          <article class="detail-card reveal animate__animated">
+            <span class="icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
+            <small data-i18n="time"></small>
+            <strong data-bind="eventTime"></strong>
+          </article>
+          <article class="detail-card reveal animate__animated">
+            <span class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+            <small data-i18n="location"></small>
+            <strong data-bind="venueName"></strong>
+          </article>
+        </div>
+
+        <div class="map-box reveal animate__animated" id="mapBox"></div>
+        <a class="maps-button" id="mapsButton" href="#" target="_blank" rel="noreferrer">
+          <span data-i18n="openMaps"></span>
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <footer>
+        <div class="footer-seal" data-bind="initials"></div>
+        <p data-i18n="footerClosing"></p>
+        <p class="credit">
+          <span>تم التنفيذ بواسطة</span>
+          <a href="mailto:ahmedalayde86@gmail.com">ahmedalayde86@gmail.com</a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
