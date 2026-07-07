@@ -15,10 +15,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -47,7 +43,7 @@
         <span></span>
       </div>
       <div class="intro-frame"></div>
-      <button class="envelope-button animate__animated animate__fadeInUp" type="button">
+      <button class="envelope-button" type="button">
         <span class="envelope">
           <span class="envelope-back"></span>
           <span class="envelope-flap"></span>
@@ -67,18 +63,18 @@
           <span></span>
           <span></span>
         </div>
-        <div class="hero-glass animate__animated animate__fadeIn"></div>
+        <div class="hero-glass"></div>
         <div class="hero-orbit orbit-one"></div>
         <div class="hero-orbit orbit-two"></div>
-        <p class="kicker animate__animated animate__fadeInDown" data-bind="formattedDate"></p>
-        <h1 class="animate__animated animate__fadeInUp" data-bind="coupleNames"></h1>
+        <p class="kicker" data-bind="formattedDate"></p>
+        <h1 data-bind="coupleNames"></h1>
         <div class="rings" aria-hidden="true">
           <i class="fa-solid fa-ring"></i>
           <i class="fa-solid fa-ring"></i>
         </div>
-        <p class="small-kicker animate__animated animate__fadeInUp animate__delay-1s" data-i18n="heroKicker"></p>
-        <p class="hero-copy animate__animated animate__fadeInUp animate__delay-1s" data-i18n="invitationLine"></p>
-        <a class="scroll-link animate__animated animate__pulse animate__infinite animate__slower" href="#countdown">
+        <p class="small-kicker" data-i18n="heroKicker"></p>
+        <p class="hero-copy" data-i18n="invitationLine"></p>
+        <a class="scroll-link" href="#countdown">
           <span data-i18n="scrollExplore"></span>
           <i class="fa-solid fa-arrow-down-long" aria-hidden="true"></i>
         </a>
@@ -96,19 +92,19 @@
           <p data-i18n="countdownSubtitle"></p>
         </div>
         <div class="countdown-grid">
-          <article class="time-card reveal animate__animated">
+          <article class="time-card reveal">
             <strong data-countdown="days">00</strong>
             <span data-i18n="days"></span>
           </article>
-          <article class="time-card reveal animate__animated">
+          <article class="time-card reveal">
             <strong data-countdown="hours">00</strong>
             <span data-i18n="hours"></span>
           </article>
-          <article class="time-card reveal animate__animated">
+          <article class="time-card reveal">
             <strong data-countdown="minutes">00</strong>
             <span data-i18n="minutes"></span>
           </article>
-          <article class="time-card reveal animate__animated">
+          <article class="time-card reveal">
             <strong data-countdown="seconds">00</strong>
             <span data-i18n="seconds"></span>
           </article>
@@ -116,7 +112,7 @@
       </section>
 
       <section class="section invitation-wrap">
-        <article class="invitation-card reveal animate__animated">
+        <article class="invitation-card reveal">
           <div class="card-seal" data-bind="initials"></div>
           <p class="kicker" data-bind="eventType"></p>
           <h2 data-i18n="invitationTitle"></h2>
@@ -138,24 +134,24 @@
           <h2 data-i18n="eventDetails"></h2>
         </div>
         <div class="details-grid">
-          <article class="detail-card reveal animate__animated">
+          <article class="detail-card reveal">
             <span class="icon"><i class="fa-regular fa-calendar-days" aria-hidden="true"></i></span>
             <small data-i18n="date"></small>
             <strong data-bind="formattedDate"></strong>
           </article>
-          <article class="detail-card reveal animate__animated">
+          <article class="detail-card reveal">
             <span class="icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
             <small data-i18n="time"></small>
             <strong data-bind="eventTime"></strong>
           </article>
-          <article class="detail-card reveal animate__animated">
+          <article class="detail-card reveal">
             <span class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
             <small data-i18n="location"></small>
             <strong data-bind="venueName"></strong>
           </article>
         </div>
 
-        <div class="map-box reveal animate__animated" id="mapBox"></div>
+        <div class="map-box reveal" id="mapBox"></div>
         <a class="maps-button" id="mapsButton" href="#" target="_blank" rel="noreferrer">
           <span data-i18n="openMaps"></span>
           <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
